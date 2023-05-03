@@ -1,0 +1,48 @@
+{% extends 'two_factor/_base.html' %} {% load static crispy_forms_tags %}
+{% block page_css %}
+<style>
+    .m-auto {
+        max-width: 600px;
+        padding: 2em 3em;
+        box-shadow: 8px 9px 15px 15px rgba(0, 0, 0, 0.2);
+    }
+    form {
+        width: 100% !important;
+    }
+    input {
+        height: 45px;
+        margin-bottom: 20px;
+    }
+    input[type="submit"] {
+        width: 100%;
+        margin-top: 2em;
+        background-color: #111016;
+        color: #ffffff;
+        border: none;
+        outline: none;
+        box-shadow: 4px 5px 8px 8px rgba(0, 0, 0, 0.2);
+    }
+</style>
+{% endblock page_css %}
+{% block content %}
+        <main>
+            <section id="hero" class="py-5" style="background-color: #1a1a1f">
+                <div class="container">
+                    <div class="row g-4 row-cols-1 row-cols-sm-2 row-cols-md-3 m-auto">
+                        <form action="{% url 'users:register' %}" method="post">
+                            {% csrf_token %}
+                            {{ form|crispy }}
+                            <input type="submit" value="Register Now">
+                        </form>
+                    </div>
+                </div>
+            </section>
+            <div class="py-5">
+                <div class="container">
+                    <div class="row g-4 row-cols-1 row-cols-sm-2 row-cols-md-3">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores veniam harum tenetur suscipit, id ut iure cum! Provident quasi sit iusto cumque saepe tenetur deleniti possimus ea, eum totam quis architecto doloremque veritatis sapiente magni nostrum laborum inventore reprehenderit ducimus est ipsa necessitatibus? Nihil aperiam est assumenda ipsa ex expedita tempora suscipit dolore asperiores, error, deleniti beatae, odio soluta cupiditate commodi in esse voluptates similique deserunt aliquam sint eaque non labore voluptas! Atque nesciunt itaque repellendus dignissimos libero ipsa ab architecto natus repudiandae voluptas dolore labore quam officiis obcaecati non iure deleniti error pariatur, illum et quis dolorem enim? Consequuntur!
+                    </div>
+                </div>
+            </div>
+        </main>
+{% endblock %}

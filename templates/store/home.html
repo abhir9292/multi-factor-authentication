@@ -1,0 +1,119 @@
+{% extends 'base.html' %} {% load static %}
+{% block content %}
+        <main>
+            <section id="hero" class="py-5" style="background-color: #1a1a1f">
+                <div class="container">
+                    <div class="d-flex flex-column flex-column-reverse flex-md-row align-items-center">
+                        <div class="col col-md-5 me-md-5">
+                            <h1 class="fs-1 mb-3 fw-bold">Secure Shopping with Multi-Factor Authentication </h1>
+                            <p class="fs-5">
+                                With MFA, you'll be required to provide two or more authentication factors to verify your identity when logging in. This can include a password, a fingerprint, or a security token. By using multiple factors, we can help ensure that only you can access your account, even if someone else has your password.
+                            </p>
+                        </div>
+    
+                        <div class="col col-md-7">
+                            <div>
+                                <img class="img-fluid rounded mb-4 mb-md-0" src="{% static 'banner.png' %}" alt="" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <div class="py-5">
+                <div class="container">
+                    <div class="row g-4 row-cols-1 row-cols-sm-2 row-cols-md-3">
+                        <div class="col">
+                            <div class="card bg-dark border-0">
+                                <img class="card-img-top" src="{% static 'products/computer.jpg' %}" alt="" />
+                                <div class="card-body">
+                                    <a class="text-light link-info bg-info text-decoration-none" href="#">
+                                        <h2 class="fs-5">Upgrade your technology game with our sleek and powerful computers, designed to handle all your computing needs.</h2>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card bg-dark border-0">
+                                <img class="card-img-top" src="{% static 'products/fashion.jpg' %}" alt="" />
+                                <div class="card-body">
+                                    <a class="text-light link-info bg-info text-decoration-none" href="#">
+                                        <h2 class="fs-5">Make a statement with our fashion-forward clothing and accessories, designed to elevate any outfit.</h2>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card bg-dark border-0">
+                                <img class="card-img-top" src="{% static 'products/food.jpg' %}" alt="" />
+                                <div class="card-body">
+                                    <a class="text-light link-info bg-info text-decoration-none" href="#">
+                                        <h2 class="fs-5">Indulge in the delicious flavors of our hand-picked selection of gourmet foods, guaranteed to satisfy any palate.</h2>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card bg-dark border-0">
+                                <img class="card-img-top" src="{% static 'products/furniture.jpg' %}" alt="" />
+                                <div class="card-body">
+                                    <a class="text-light link-info bg-info text-decoration-none" href="#">
+                                        <h2 class="fs-5">Transform your space into a stylish and comfortable oasis with our curated collection of modern furniture pieces.</h2>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card bg-dark border-0">
+                                <img class="card-img-top" src="{% static 'products/jewelry.jpg' %}" alt="" />
+                                <div class="card-body">
+                                    <a class="text-light link-info bg-info text-decoration-none" href="#">
+                                        <h2 class="fs-5">Adorn yourself with our exquisite jewelry pieces, crafted from the finest materials and with attention to every detail.</h2>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card bg-dark border-0">
+                                <img class="card-img-top" src="{% static 'products/kitchen.jpg' %}" alt="" />
+                                <div class="card-body">
+                                    <a class="text-light link-info bg-info text-decoration-none" href="#">
+                                        <h2 class="fs-5">Create culinary masterpieces with ease using our state-of-the-art kitchen equipment and gadgets.</h2>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card bg-dark border-0">
+                                <img class="card-img-top" src="{% static 'products/mobile.jpg' %}" alt="" />
+                                <div class="card-body">
+                                    <a class="text-light link-info bg-info text-decoration-none" href="#">
+                                        <h2 class="fs-5">Stay connected on the go with our range of cutting-edge mobile devices, featuring the latest in technology and design.</h2>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card bg-dark border-0">
+                                <img class="card-img-top" src="{% static 'products/sound.jpg' %}" alt="" />
+                                <div class="card-body">
+                                    <a class="text-light link-info bg-info text-decoration-none" href="#">
+                                        <h2 class="fs-5">Elevate your listening experience with our high-quality sound systems, perfect for music lovers and audiophiles alike.</h2>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card bg-dark border-0">
+                                <img class="card-img-top" src="{% static 'products/tv.jpg' %}" alt="" />
+                                <div class="card-body">
+                                    <a class="text-light link-info bg-info text-decoration-none" href="#">
+                                        <h2 class="fs-5">Experience crystal-clear visuals and immersive sound with our top-of-the-line video systems.</h2>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+{% endblock %}

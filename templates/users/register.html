@@ -1,0 +1,48 @@
+{% extends 'base.html' %} {% load static crispy_forms_tags %}
+{% block page_css %}
+<style>
+    .m-auto {
+        max-width: 600px;
+        padding: 2em 3em;
+        box-shadow: 8px 9px 15px 15px rgba(0, 0, 0, 0.2);
+    }
+    form {
+        width: 100% !important;
+    }
+    input {
+        height: 45px;
+        margin-bottom: 20px;
+    }
+    input[type="submit"] {
+        width: 100%;
+        margin-top: 2em;
+        background-color: #111016;
+        color: #ffffff;
+        border: none;
+        outline: none;
+        box-shadow: 4px 5px 8px 8px rgba(0, 0, 0, 0.2);
+    }
+</style>
+{% endblock page_css %}
+{% block content %}
+        <main>
+            <section id="hero" class="py-5" style="background-color: #1a1a1f">
+                <div class="container">
+                    <div class="row g-4 row-cols-1 row-cols-sm-2 row-cols-md-3 m-auto">
+                        <form action="{% url 'users:register' %}" method="post">
+                            {% csrf_token %}
+                            {{ form|crispy }}
+                            <input type="submit" value="Register Now">
+                        </form>
+                    </div>
+                </div>
+            </section>
+            <div class="py-5">
+                <div class="container">
+                    <div class="row g-4 row-cols-1 row-cols-sm-2 row-cols-md-3">
+                        Stay Secure with Multi-Factor Authentication. We take your account security seriously. That's why we've implemented multi-factor authentication (MFA) to help protect your account from unauthorized access. With MFA, you'll be required to provide two or more authentication factors to verify your identity when logging in. This can include a password, a fingerprint, or a security token. By using multiple factors, we can help ensure that only you can access your account, even if someone else has your password. Enabling MFA is quick and easy. Simply register and navigate to the security settings page. From there, you can choose which factors you'd like to use and configure your MFA settings. Don't take chances with your account security. Enable multi-factor authentication today and stay protected from potential threats.
+                    </div>
+                </div>
+            </div>
+        </main>
+{% endblock %}
